@@ -13,7 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
     />
 
-    <title>Webpack Starter Kit</title>
+    <title>Trafalgar</title>
 
     <!-- Don't forget to delete this style tag. -->
   </head>
@@ -26,39 +26,41 @@
         >
         <ul class="nav-list list flexbox">
           <li class="item">
-            <a href="" class="link current">Home</a>
+            <a href="#home" class="link current">Home</a>
           </li>
           <li class="item">
-            <a href="" class="link">Find a doctor</a>
+            <a href="#find-a-doctor" class="link">Find a doctor</a>
           </li>
           <li class="item">
-            <a href="" class="link">Apps</a>
+            <a href="#apps" class="link">Apps</a>
           </li>
           <li class="item">
-            <a href="" class="link">Testimonials</a>
+            <a href="#testimonials" class="link">Testimonials</a>
           </li>
           <li class="item">
-            <a href="" class="link">About us</a>
+            <a href="#about-us" class="link">About us</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="hero container flexbox">
-        <div class="hero-content">
-          <h1>
-            Virtual healthcare
-            <br />
-            for you
-          </h1>
-          <p>
-            Trafalgar provides progressive, and affordable healthcare,
-            accessible on mobile and online for everyone
-          </p>
-          <button class="btn">Consult today</button>
+      <section class="hero indent">
+        <div class="container hero-container flexbox">
+          <div class="hero-content">
+            <h1>
+              Virtual healthcare
+              <br />
+              for you
+            </h1>
+            <p>
+              Trafalgar provides progressive, and affordable healthcare,
+              accessible on mobile and online for everyone
+            </p>
+            <button class="btn">Consult today</button>
+          </div>
         </div>
       </section>
-      <section class="our-services">
+      <section id="find-a-doctor" class="our-services indent">
         <div class="container">
           <div class="our-services-title">
             <h2 class="line">Our services</h2>
@@ -115,115 +117,181 @@
           <button class="btn">Learn more</button>
         </div>
       </section>
-      <section class="providers">
-        <div class="indent">
-          <div class="container">
-            <div class="providers-content flexbox">
-              <div>
-                <h2 class="line">Leading healthcare providers</h2>
-                <p>
-                  Trafalgar provides progressive, and affordable healthcare,
-                  accessible on mobile and online for everyone. To us, it’s not
-                  just work. We take pride in the solutions we deliver
-                </p>
-                <button class="btn">Learn more</button>
+      <section id="apps" class="apps indent">
+        <div class="container">
+          <ul class="apps-list list">
+            <li class="apps-item">
+              <div class="apps-content flexbox apps-content--right">
+                <div>
+                  <h2 class="line">Leading healthcare providers</h2>
+                  <p>
+                    Trafalgar provides progressive, and affordable healthcare,
+                    accessible on mobile and online for everyone. To us, it’s
+                    not just work. We take pride in the solutions we deliver
+                  </p>
+                  <button class="btn">Learn more</button>
+                </div>
               </div>
-            </div>
-          </div>
+            </li>
+            <li class="apps-item">
+              <div class="apps-content flexbox">
+                <div>
+                  <h2 class="line">Download our mobile apps</h2>
+                  <p>
+                    Our dedicated patient engagement app and web portal allow
+                    you to access information instantaneously (no tedeous form,
+                    long calls, or administrative hassle) and securely
+                  </p>
+                  <a class="btn vector">Download</a>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
-      <section>
-        <h2>Download our mobile apps</h2>
-        <p>
-          Our dedicated patient engagement app and web portal allow you to
-          access information instantaneously (no tedeous form, long calls, or
-          administrative hassle) and securely
-        </p>
-        <button>Download</button>
+      <section id="testimonials" class="reviews indent">
+        <div class="container">
+          <article class="reviews-item">
+            <h2 class="reviews-title line">What our customer are saying</h2>
+            <section class="reviews-person flexbox">
+              <img
+                src="./images/reviews-photo.png"
+                alt="Group5"
+                width="141"
+                class="reviews-img"
+              />
+              <div class="reviews-contact">
+                <h3 class="reviews-name">Edward Newgate</h3>
+                <p class="reviews-position">Founder Circle</p>
+              </div>
+
+              <p class="reviews-text">
+                “Our dedicated patient engagement app and web portal allow you
+                to access information instantaneously (no tedious form, long
+                calls, or administrative hassle) and securely”
+              </p>
+            </section>
+          </article>
+        </div>
       </section>
-      <article>
-        <h2>What our customer are saying</h2>
-        <section>
-          <img src="./images/Group5.jpg" alt="Group5" width="141" />
-          <h3>Edward Newgate</h3>
-          <p>Founder Circle</p>
-          <p>
-            “Our dedicated patient engagement app and web portal allow you to
-            access information instantaneously (no tedeous form, long calls, or
-            administrative hassle) and securely”
-          </p>
-        </section>
-      </article>
-      <section>
-        <h2>Check out our latest article</h2>
-        <ul>
-          <li>
-            <img src="./images/MaskGroup.jpg" alt="MaskGroup" />
-            <h3>Disease detection, check up in the laboratory</h3>
-            <p>
-              In this case, the role of the health laboratory is very important
-              to do a disease detection...
-            </p>
-            <button>Read more</button>
-          </li>
-          <li>
-            <img src="./images/MaskGroup2.jpg" alt="MaskGroup2" />
-            <h3>Herbal medicines that are safe for consumption</h3>
-            <p>
-              Herbal medicine is very widely used at this time because of its
-              very good for your health...<health class=""></health>
-            </p>
-            <button>Read more</button>
-          </li>
-          <li>
-            <img src="./images/MaskGroup3.jpg" alt="MaskGroup3" />
-            <h3>Natural care for healthy facial skin</h3>
-            <p>
-              A healthy lifestyle should start from now and also for your skin
-              health. There are some...
-            </p>
-            <button>Read more</button>
-          </li>
-        </ul>
-        <button>View all</button>
+      <section id="about-us" class="articles indent">
+        <div class="container">
+          <h2 class="articles-title line">Check out our latest article</h2>
+          <ul class="articles-list list flexbox">
+            <li class="articles-item">
+              <img src="./images/MaskGroup.jpg" alt="MaskGroup" />
+              <div class="articles-item-description">
+                <h3 class="articles-item-title">
+                  Disease detection, check up in the laboratory
+                </h3>
+                <p class="articles-item-text">
+                  In this case, the role of the health laboratory is very
+                  important to do a disease detection...
+                </p>
+                <a class="articles-item-link">Read more</a>
+              </div>
+            </li>
+            <li class="articles-item">
+              <img src="./images/MaskGroup2.jpg" alt="MaskGroup2" width="350" />
+              <div class="articles-item-description">
+                <h3 class="articles-item-title">
+                  Herbal medicines that are safe for consumption
+                </h3>
+                <p class="articles-item-text">
+                  Herbal medicine is very widely used at this time because of
+                  its very good for your health...
+                </p>
+                <a class="articles-item-link">Read more</a>
+              </div>
+            </li>
+            <li class="articles-item">
+              <img src="./images/MaskGroup3.jpg" alt="MaskGroup3" />
+              <div class="articles-item-description">
+                <h3 class="articles-item-title">
+                  Natural care for healthy facial skin
+                </h3>
+                <p class="articles-item-text">
+                  A healthy lifestyle should start from now and also for your
+                  skin health. There are some...
+                </p>
+                <a class="articles-item-link">Read more</a>
+              </div>
+            </li>
+          </ul>
+          <button class="btn">View all</button>
+        </div>
       </section>
     </main>
-    <footer>
-      <a href="/">T Trafalgar</a>
-      <p>
-        Trafalgar provides progressive, and affordable healthcare, accessible on
-        mobile and online for everyone
-      </p>
-      <p>&copy;Trafalgar PTY LTD 2020. All rights reserved</p>
-      <ul>
-        <li>
-          <ul>
-            <li>Company</li>
-            <li><a href="">About</a></li>
-            <li><a href="">Testimonials</a></li>
-            <li><a href="">Find a doctor</a></li>
-            <li><a href="">Apps</a></li>
+    <footer class="footer">
+      <div class="container footer-container flexbox">
+        <div class="footer-information">
+          <a href="" class="logo link flexbox"
+            ><span class="logo-letter">T</span> Trafalgar</a
+          >
+          <p class="footer-text">
+            Trafalgar provides progressive, and affordable healthcare,
+            accessible on mobile and online for everyone
+          </p>
+          <p class="footer-copyright">
+            &copy;Trafalgar PTY LTD 2020. All rights reserved
+          </p>
+        </div>
+        <div>
+          <ul class="footer-columns flexbox list">
+            <li class="footer-columns-item">
+              <ul class="footer-list list">
+                <li class="footer-list-title">Company</li>
+                <li class="footer-list-item">
+                  <a href="" class="footer-item-link link">About</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="" class="footer-item-link link">Testimonials</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="" class="footer-item-link link">Find a doctor</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="" class="footer-item-link link">Apps</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-columns-item">
+              <ul class="footer-list list">
+                <li class="footer-list-title">Region</li>
+                <li class="footer-list-item">
+                  <a href="" class="footer-item-link link">Indonesia</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="" class="footer-item-link link">Singapore</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="" class="footer-item-link link">Hongkong</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="" class="footer-item-link link">Canada</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-columns-item">
+              <ul class="footer-list list">
+                <li class="footer-list-title">Help</li>
+                <li class="footer-list-item">
+                  <a href="" class="footer-item-link link">Help center</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="" class="footer-item-link link">Contact support</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="" class="footer-item-link link">Instructions</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="" class="footer-item-link link">How it works</a>
+                </li>
+              </ul>
+            </li>
           </ul>
-        </li>
-        <li>
-          <ul>
-            <li>Region</li>
-            <li><a href="">Indonesia</a></li>
-            <li><a href="">Singapore</a></li>
-            <li><a href="">Hongkong</a></li>
-            <li><a href="">Canada</a></li>
-          </ul>
-        </li>
-        <li>
-          <ul>
-            <li>Help</li>
-            <li><a href="">Help center</a></li>
-            <li><a href="">Contact support</a></li>
-            <li><a href="">Instructions</a></li>
-            <li><a href="">How it works</a></li>
-          </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
