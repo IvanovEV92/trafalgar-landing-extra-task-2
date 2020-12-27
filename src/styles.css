@@ -460,6 +460,10 @@ h1 {
 .articles-item-link {
   display: block;
   margin-top: 25px;
+  color: var(--color-acent);
+}
+.articles-item-link.vector::after {
+  transform: rotate(-90deg);
 }
 .articles .btn {
   position: relative;
