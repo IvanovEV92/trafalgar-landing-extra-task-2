@@ -1,1 +1,3 @@
-import './styles.css';
+import './style/styles.css';
+import './js/modalhero';
+
