@@ -100,7 +100,9 @@ p {
   font-weight: 700;
   line-height: 3.33;
 }
-
+.btn:hover {
+  cursor: pointer;
+}
 .line::after {
   content: '';
   position: absolute;
@@ -240,7 +242,7 @@ p {
 }
 
 .our-services__title {
-  text-align: center;
+  text-align: left;
 
   font-weight: 700;
   line-height: 1.56;
@@ -410,6 +412,9 @@ p {
 .reviews__person {
   align-items: center;
   justify-content: space-between;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .reviews__position,
 .reviews__text {
@@ -417,7 +422,7 @@ p {
 }
 .reviews__text {
   text-align: left;
-  width: 420px;
+  width: 300px;
 }
 
 /* Блок статей */
@@ -590,5 +595,23 @@ input {
   line-height: 3.33;
 }
 
+/* Свайпар */
+.swiper-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 300px;
+}
+div.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #fff;
+}
+.swiper-button-next:after {
+  color: #fff;
+}
+.swiper-button-prev:after {
+  color: #fff;
+}
 
-
+div.swiper-scrollbar-drag {
+  background: #fff;
+}
